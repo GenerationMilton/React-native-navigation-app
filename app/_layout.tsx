@@ -20,7 +20,6 @@ const RootLayout = () => {
   }, [fontsLoaded, error]);
 
   if (!fontsLoaded && !error) return null;
-
   return <Slot />;
 };
 
