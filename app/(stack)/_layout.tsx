@@ -2,7 +2,15 @@ import { Stack } from "expo-router";
 
 const StackLayout = () => {
   return (
-    <Stack>
+    <Stack
+      screenOptions={{
+        // headerShown: false,
+        headerShadowVisible: false,
+        contentStyle: {
+          backgroundColor: "white",
+        },
+      }}
+    >
       <Stack.Screen
         name="home"
         options={{
@@ -13,6 +21,7 @@ const StackLayout = () => {
         name="products"
         options={{
           title: "Productos",
+          animation: "fade_from_bottom",
         }}
       />
       <Stack.Screen
