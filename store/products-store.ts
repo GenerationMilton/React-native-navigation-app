@@ -5,6 +5,7 @@ export const products = [
     description:
       "Experimenta una calidad de sonido premium con estos auriculares inalámbricos. Diseñados para la comodidad y el uso prolongado, son perfectos para amantes de la música y profesionales por igual.",
     price: 99.99,
+    image: require("../assets/images/auriculares.jpg"),
   },
   {
     id: "2",
@@ -12,6 +13,7 @@ export const products = [
     description:
       "Mantente conectado y sigue tu estado físico con este elegante y moderno reloj inteligente. Equipado con funciones como monitoreo de frecuencia cardíaca, GPS y más.",
     price: 149.99,
+    image: require("../assets/images/reloj.jpg"),
   },
   {
     id: "3",
@@ -19,6 +21,7 @@ export const products = [
     description:
       "Portátil y potente, este altavoz Bluetooth ofrece un sonido claro y nítido donde quiera que vayas. Ideal para fiestas, actividades al aire libre y más.",
     price: 59.99,
+    image: require("../assets/images/altavoz.jpg"),
   },
   {
     id: "4",
@@ -26,6 +29,7 @@ export const products = [
     description:
       "Mejora tu experiencia de juego con este ratón para gaming de alta precisión. Diseñado ergonómicamente y construido para durar, es imprescindible para cualquier jugador.",
     price: 39.99,
+    image: require("../assets/images/raton.jpg"),
   },
   {
     id: "5",
@@ -33,5 +37,6 @@ export const products = [
     description:
       "Disfruta de impresionantes visuales con este monitor 4K. Perfecto para juegos, trabajo o entretenimiento, ofrece colores vibrantes y detalles nítidos.",
     price: 299.99,
+    image: require("../assets/images/monitor.jpg"),
   },
 ];
