@@ -22,13 +22,13 @@ const DrawerLayout = () => {
                 options={{
                     drawerLabel: "User",
                     title: "usuario",
-                    drawerIcon: ({ color, size }) => {
-                        <Ionicons name="person-circle-outline"
+                    drawerIcon: ({ color, size }) => (
+                        <Ionicons
+                            name="person-circle-outline"
                             size={size}
                             color={color}
-
-                        />;
-                    },
+                        />
+                    ),
                 }}
             />
             <Drawer.Screen
@@ -36,13 +36,13 @@ const DrawerLayout = () => {
                 options={{
                     drawerLabel: "Horario",
                     title: "Horario",
-                    drawerIcon: ({ color, size }) => {
-                        <Ionicons name="calendar-outline"
+                    drawerIcon: ({ color, size }) => (
+                        <Ionicons
+                            name="calendar-outline"
                             size={size}
                             color={color}
-
-                        />;
-                    },
+                        />
+                    ),
                 }}
             />
         </Drawer>
