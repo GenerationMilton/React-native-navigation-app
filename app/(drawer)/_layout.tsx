@@ -18,14 +18,15 @@ const DrawerLayout = () => {
                 },
             }}
         >
+
             <Drawer.Screen
-                name="user/index" // This is the name of the page and must match the url from root
+                name="(tabs)" // This is the name of the page and must match the url from root
                 options={{
-                    drawerLabel: "User",
-                    title: "usuario",
+                    drawerLabel: "Tabs + Stack",
+                    title: "Tabs + Stack",
                     drawerIcon: ({ color, size }) => (
                         <Ionicons
-                            name="person-circle-outline"
+                            name="albums-outline"
                             size={size}
                             color={color}
                         />
@@ -34,13 +35,13 @@ const DrawerLayout = () => {
             />
 
             <Drawer.Screen
-                name="tabs/index" // This is the name of the page and must match the url from root
+                name="user/index" // This is the name of the page and must match the url from root
                 options={{
-                    drawerLabel: "Tabs + Stack",
-                    title: "Tabs + Stack",
+                    drawerLabel: "User",
+                    title: "usuario",
                     drawerIcon: ({ color, size }) => (
                         <Ionicons
-                            name="albums-outline"
+                            name="person-circle-outline"
                             size={size}
                             color={color}
                         />
