@@ -1,18 +1,17 @@
-import { Slot, SplashScreen } from "expo-router";
-import "./global.css";
+import { useEffect } from 'react';
+import { Slot, SplashScreen, Stack } from 'expo-router';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { useFonts } from 'expo-font';
 
-import { useFonts } from "expo-font";
-import React, { useEffect } from "react";
-
-import { GestureHandlerRootView } from "react-native-gesture-handler";
+import './global.css';
 
 SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
   const [fontsLoaded, error] = useFonts({
-    "WorkSans-Black": require("../assets/fonts/WorkSans-Black.ttf"),
-    "WorkSans-Light": require("../assets/fonts/WorkSans-Light.ttf"),
-    "WorkSans-Medium": require("../assets/fonts/WorkSans-Medium.ttf"),
+    'WorkSans-Black': require('../assets/fonts/WorkSans-Black.ttf'),
+    'WorkSans-Light': require('../assets/fonts/WorkSans-Light.ttf'),
+    'WorkSans-Medium': require('../assets/fonts/WorkSans-Medium.ttf'),
   });
 
   useEffect(() => {
@@ -28,9 +27,8 @@ const RootLayout = () => {
       <Slot />
     </GestureHandlerRootView>
   );
-  // return <Slot />;
 
+  // return <Slot />;
   // return <Stack />;
 };
-
 export default RootLayout;

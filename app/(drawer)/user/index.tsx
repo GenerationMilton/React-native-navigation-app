@@ -1,6 +1,4 @@
-import { View, Text } from "react-native";
-import React from "react";
-
+import { View, Text } from 'react-native';
 const UserScreen = () => {
   return (
     <View>
@@ -8,5 +6,4 @@ const UserScreen = () => {
     </View>
   );
 };
-
 export default UserScreen;

@@ -1,11 +1,11 @@
-import React from "react";
-import { View, Text, Pressable, PressableProps } from "react-native";
+import React from 'react';
+import { View, Text, Pressable, PressableProps } from 'react-native';
 
 interface Props extends PressableProps {
   children: string;
-  color?: "primary" | "secondary" | "tertiary";
+  color?: 'primary' | `secondary` | 'tertiary';
 
-  variant?: "contained" | "text-only";
+  variant?: 'contained' | 'text-only';
   className?: string;
 }
 
@@ -13,27 +13,27 @@ const CustomButton = React.forwardRef(
   (
     {
       children,
-      color = "primary",
+      color = 'primary',
       onPress,
       onLongPress,
-      variant = "contained",
+      variant = 'contained',
       className,
     }: Props,
-    ref: React.Ref<View>,
+    ref: React.Ref<View>
   ) => {
     const btnColor = {
-      primary: "bg-primary",
-      secondary: "bg-secondary",
-      tertiary: "bg-tertiary",
+      primary: 'bg-primary',
+      secondary: 'bg-secondary',
+      tertiary: 'bg-tertiary',
     }[color];
 
     const textColor = {
-      primary: "text-primary",
-      secondary: "text-secondary",
-      tertiary: "text-tertirary",
+      primary: 'text-primary',
+      secondary: 'text-secondary',
+      tertiary: 'text-tertiary',
     }[color];
 
-    if (variant == "text-only") {
+    if (variant === 'text-only') {
       return (
         <Pressable
           className={`p-3 ${className}`}
@@ -60,7 +60,7 @@ const CustomButton = React.forwardRef(
         </Text>
       </Pressable>
     );
-  },
+  }
 );
 
 export default CustomButton;
